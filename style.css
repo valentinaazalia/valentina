@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', 'Book anntiqu';
+}
+/*mengatur tata letak dan ukuran menu pada header*/
+header {
+    position: static; /*mengikuti ukuran hal. web dlm hal ini posisinya*/
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    background-color: rgb(239, 200, 227);
+}
+.logo {
+    font-size: medium;
+    color: rgb(145, 145, 145);
+}
+
+.logo span {
+    color: rgb(127, 161, 222);
+}
+
+.navigation {
+    margin-left: 300px;
+}
+
+.navigation a {
+    font-size: medium;
+    color: rgb(109, 109, 109);
+    margin-right: 30px;
+    text-decoration: none; /*none untuk menghilangkan garis bawah pada navigation yg about, home dll*/
+    font-weight: 400;
+    transition: .10s;
+}
+
+.navigation a:hover {
+    color: rgb(224, 82, 205);
+}
+
+.home {
+    position: relative;
+    width: 100%; /*mengatur gambar tinggi*/
+    height: 115vh; /*mengatur lebar gambar*/
+    background: url('gambar\ 1.jpg'); /*menambahkan gambar background */
+    background-size: cover; /*mengatur posisi gambar*/
+    background-position: center;
+    display: flex; /*mengatur letak*/
+    align-items: center;
+    padding: 20px 60px;
+}
+.content {
+    max-width: 500px;
+    color: rgb(239, 200, 227);
+}
+.content h2 {
+    font-size: 48px;
+}
+.content h2 span {
+    color:rgb(150, 171, 248);
+}
+.conten h4 {
+    font-size: 34px;
+}
+.content p {
+    padding: 10px 0 40px 0;
+    /*mengatur batas atas, bawah, kanan dan kiri */
+}
+/* mengatur button*/
+.btn-group a {
+    color: rgb(62, 62, 62);
+    text-decoration: none;
+    background-color: rgb(195, 203, 242);
+    padding: 10px 40px;
+    border-radius: 15px;
+    border: 2px solid rgb(71, 70, 71);
+
+}
+/* mengatur hover pada button hire me */
+.btn-group a:hover:nth-child(2) {
+    color: rgb(177, 202, 212);
+    background: transparent;
+}
+.btn-group a:nth-child(2){
+    color: rgb(96, 221, 255);
+    background: transparent;
+    margin-left: 30px;
+    padding: 10px 30px;
+}
+/*mengatur posisi icon media social*/
+.social-icons {
+    position: absolute;
+    bottom: 80px;
+}
+.social-icons a {
+    display: inline-block;
+    background: darkcyan;
+    width: 35px; /*mengatur lebar icon*/
+    height: 35px; /*mengatur tinggi icon*/
+    line-height: 35px; /*mengatur posisi icon agar berada di tengah lingkaran*/
+    text-align: center;
+    color: aliceblue;
+    border-radius: 20px; /*mengatur border agar bentuk lingkaran*/
+    border: 1px solid white;
+    outline: 2px solid crimson;
+    margin-right: 30px;
+}
